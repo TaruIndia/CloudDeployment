@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue">
+    <h1>Wine Class Detection</h1><br>
+<form action="{{url_for('predict')}}", method="POST">
+<b> 
+    Alcohol <input type="text", name='a', placeholder="Enter Alcohol value" required="required"><br><br>
+    Malic acid <input type="text", name='b', placeholder="Enter Malic acid" required="required"><br><br>
+    Ash <input type="text", name='c', placeholder="Enter Ash value" required="required"><br><br>
+    Alcalinity of ash <input type="text", name='d', placeholder="Enter Alcalinity value" required="required"><br><br>
+    Magnesium <input type="text", name='e', placeholder="Enter Magnesium value" required="required"><br><br>
+    Total phenols <input type="text", name='f', placeholder="Enter phenols value" required="required"><br><br>
+    Flavanoids <input type="text", name='g', placeholder="Enter Flavanoids value" required="required"><br><br>
+    Nonflavanoid phenols <input type="text", name='h', placeholder="Enter Nonflavanoid phenols value" required="required"><br><br>
+    Proanthocyanins <input type="text", name='i', placeholder="Enter Proanthocyanins value" required="required"><br><br>
+    Color intensity <input type="text", name='j', placeholder="Enter Color intensity value" required="required"><br><br>
+    Hue <input type="text", name='k', placeholder="Enter Hue value" required="required"><br><br>
+    od280/od315 of diluted wines<input type="text", name='l', placeholder="Enter od280/od315 value" required="required"><br><br>
+    Proline  <input type="text", name='m', placeholder="Enter Proline value" required="required"><br><br>
+
+    <button type="submit", class="btn">Predict</button><br><br>
+
+</form>
+<!--Prediction Result-->
+    <div id ="result">
+        <strong style="color:red">{{prediction_text}}</strong>
+    </div>
+</body>
+</html>

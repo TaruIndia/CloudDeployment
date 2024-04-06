@@ -1,4 +1,12 @@
-pandas
-numpy
+fastapi==0.110.1
+numpy==1.26.4
+pandas==1.4.2
+pydantic==2.6.4
+scikit_learn==1.0.2
+uvicorn==0.29.0
+distlib==0.3.8
+filelock==3.13.3
+platformdirs==4.2.0
+virtualenv==20.25.1
 
 -e .
